@@ -86,14 +86,14 @@ const BuilderPage = () => {
             {openSections.profile && (
               <div className="glass rounded-xl p-5 space-y-4 mb-4">
                 {[
-                  { key: "name", label: "Nama Lengkap", placeholder: "Contoh: Budi Santoso" },
-                  { key: "title", label: "Jabatan / Role", placeholder: "Contoh: Frontend Developer" },
+                  { key: "name", label: "Nama Lengkap", placeholder: "Contoh: Dearly Febriano Irwansyah" },
+                  { key: "title", label: "Jabatan / Role", placeholder: "Contoh: FullStack Developer" },
                   { key: "location", label: "Lokasi", placeholder: "Contoh: Jakarta, Indonesia" },
-                  { key: "email", label: "Email", placeholder: "budi@email.com" },
+                  { key: "email", label: "Email", placeholder: "contoh@gmail.com" },
                   { key: "phone", label: "Nomor HP", placeholder: "+62 812 xxxx xxxx" },
-                  { key: "website", label: "Website / Portfolio URL", placeholder: "https://budi.dev" },
-                  { key: "linkedin", label: "LinkedIn", placeholder: "linkedin.com/in/budi" },
-                  { key: "github", label: "GitHub", placeholder: "github.com/budi" },
+                  { key: "website", label: "Website / Portfolio URL", placeholder: "https://dearly.com" },
+                  { key: "linkedin", label: "LinkedIn", placeholder: "linkedin.com/in/dearly" },
+                  { key: "github", label: "GitHub", placeholder: "github.com/dearlyfebrianos" },
                 ].map(({ key, label, placeholder }) => (
                   <div key={key}>
                     <label className="label-field">{label}</label>
