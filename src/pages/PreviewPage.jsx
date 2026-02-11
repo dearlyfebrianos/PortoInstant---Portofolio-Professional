@@ -18,7 +18,7 @@ const PreviewPage = () => {
 
       const opt = {
         margin: 0,
-        filename: `portofolio-${(data.name || "porto").toLowerCase().replace(/\s+/g, "-")}.pdf`,
+        filename: `PORTOFOLIO-${(data.name || "porto").toUpperCase().replace(/\s+/g, " ")}.pdf`,
         image: { type: "jpeg", quality: 0.98 },
         html2canvas: { scale: 2, useCORS: true, letterRendering: true },
         jsPDF: { unit: "mm", format: "a4", orientation: "portrait" },
@@ -87,8 +87,8 @@ const PreviewPage = () => {
             <div className="w-3 h-3 rounded-full bg-yellow-500/60" />
             <div className="w-3 h-3 rounded-full bg-green-500/60" />
             <span className="ml-3 text-xs text-white/30 font-mono">
-              portofolio-
-              {(data.name || "preview").toLowerCase().replace(/\s+/g, "-")}.pdf
+              PORTOFOLIO-
+              {(data.name || "preview").toUpperCase().replace(/\s+/g, " ")}.pdf
             </span>
           </div>
           <div ref={previewRef} className="min-h-[800px]">
