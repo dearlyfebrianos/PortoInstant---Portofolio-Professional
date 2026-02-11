@@ -87,8 +87,8 @@ const PreviewPage = () => {
             <div className="w-3 h-3 rounded-full bg-yellow-500/60" />
             <div className="w-3 h-3 rounded-full bg-green-500/60" />
             <span className="ml-3 text-xs text-white/30 font-mono">
-              PORTOFOLIO 
-              {(data.name || "preview").toUpperCase().replace(/\s+/g, " ")}.pdf
+              PORTOFOLIO
+              {(" " + data.name || "preview").toUpperCase().replace(/\s+/g, " ")}.pdf
             </span>
           </div>
           <div ref={previewRef} className="min-h-[800px]">
